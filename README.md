@@ -180,4 +180,5 @@ Planned Enhancements:
 
 ---
 
+⭐ If you like this project, please give it a star — it helps support future updates!
 We hope you enjoy using Jarvis 3.0!
