@@ -1,0 +1,32 @@
+# -------------------------
+# Jarvis 3.0 - Multimodal AI Assistant
+# Python 3.12 Recommended
+# -------------------------
+
+# 🔹 Core AI & Utility Packages
+opencv-python
+numpy
+pyttsx3
+SpeechRecognition
+pyaudio
+pyautogui
+Pillow
+screeninfo
+keyboard
+
+# 🔹 Motion & Hand Tracking (Optional)
+mediapipe
+
+# 🔹 GUI Framework
+tk
+
+# 🔹 Performance / Threading Utilities
+psutil
+requests
+
+# 🔹 Optional - Speech/Audio Enhancements
+gTTS
+playsound
+
+# 🔹 Debugging / Logging
+colorama
