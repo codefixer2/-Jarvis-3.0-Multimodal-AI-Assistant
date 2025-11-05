@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../JARVIS3.0"
+		},
+		{
+			"path": "../FLASKRESTAPI"
+		}
+	],
+	"settings": {
+		"git.enabled": false
+	}
+}
