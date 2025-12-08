@@ -62,7 +62,7 @@ If not, you can install it from:
 ### 2️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/Jarvis3.0.git
+git clone https://github.com/<tusharkantimahato>/Jarvis3.0.git
 cd Jarvis3.0
 
 
