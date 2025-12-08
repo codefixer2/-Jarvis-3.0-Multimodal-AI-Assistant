@@ -125,16 +125,67 @@ GestureAction👍 Thumbs DownVolume Down✋ Open PalmPlay/Pause Media☝️ Poin
 🧾 Project Structure
 📁 Jarvis 3.0/
 │
-├── main.py                     # Main Jarvis 3.0 code
-├── AUTO_SETUP.bat
-├── INSTALL_MEDIAPIPE.md
-├── SETUP_MEDIAPIPE.bat
-├── README_MEDIAPIPE.md
-├── CHECK_INSTALL_STATUS.bat
-├── picture_*.jpg               # Captured images
-├── QUICK_INSTALL.txt
-└── requirements.txt            # (Optional)
-
+├── src/
+│   ├── api/
+│   │   ├── routes/
+│   │   ├── gemini_client.py
+│   │   ├── cli.py
+│   │   └── __init__.py
+│   │
+│   ├── desktop/
+│   │   ├── main_window.py
+│   │   ├── widgets/
+│   │   └── __init__.py
+│   │
+│   ├── gui/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   └── __init__.py
+│   │
+│   ├── voice/
+│   │   ├── recognizer.py
+│   │   ├── text_to_speech.py
+│   │   └── __init__.py
+│   │
+│   ├── motion/
+│   │   ├── gesture_recognition.py
+│   │   └── __init__.py
+│   │
+│   ├── camera/
+│   │   ├── camera_controller.py
+│   │   └── __init__.py
+│   │
+│   ├── utils/
+│   │   ├── helpers.py
+│   │   ├── logger.py
+│   │   └── __init__.py
+│   │
+│   ├── web/
+│   │   ├── app.py
+│   │   ├── templates/
+│   │   │   └── *.html
+│   │   ├── static/
+│   │   │   ├── css/
+│   │   │   ├── js/
+│   │   │   └── images/
+│   │   └── __init__.py
+│
+├── config/
+│   ├── settings.py
+│   └── config.yaml
+│
+├── tests/
+│   ├── test_api.py
+│   ├── test_desktop.py
+│   ├── test_web.py
+│   └── __init__.py
+│
+├── run_desktop.py
+├── run_web.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
 
 🧑‍💻 Author
 **Tushar Kanti Mahato**
