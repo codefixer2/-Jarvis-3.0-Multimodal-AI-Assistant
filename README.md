@@ -174,6 +174,13 @@ Made with ❤️ for AI enthusiasts
 - 🧠 **Multithreading Support:**  
   Smooth execution of multiple tasks (voice + motion + camera).
 
+  ----
+  ## requirements.txt
+  Flask==3.0.0
+flask-cors==4.0.0
+google-generativeai==0.3.2
+python-dotenv==1.0.0
+
 ---
 
 ## 🧩 Tech Stack
@@ -411,12 +418,6 @@ You can gradually migrate to the new structure or keep both for compatibility.
 🔹 Project: Jarvis 3.0 – Multimodal Assistant
 🔹 Version: v3.0
 🔹 Python Runtime: py -3.12
-
-📜 Licensed under the [MIT License](LICENSE)
-This project is licensed under the MIT License – you are free to modify and distribute it with attribution.
-MIT License © 2025 Tushar Kanti Mahato
-
-
 
 💡 Notes
 
