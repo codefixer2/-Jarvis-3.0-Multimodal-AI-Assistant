@@ -272,15 +272,11 @@ Some example commands:
 ✋ Gesture Controls
 GestureAction👍 Thumbs DownVolume Down✋ Open PalmPlay/Pause Media☝️ Pointing Up(Reserved for custom actions)
 
-🧾 Project Structure
-📁 Jarvis 3.0/
 # JARVIS 3.0 - Project Structure
 
 This document describes the organized file and folder structure of the JARVIS 3.0 project.
 
 ## 📁 Directory Structure
-
-```
 JARVIS3.0/
 ├── src/                          # Source code directory
 │   ├── api/                      # API and Backend modules
@@ -409,8 +405,6 @@ The old files (`app.py`, `main.py`, `.api/new_api.py`) are still present but the
 - `src/api/new_api.py` instead of `.api/new_api.py`
 
 You can gradually migrate to the new structure or keep both for compatibility.
-
-
 
 🧑‍💻 Author
 **Tushar Kanti Mahato**
