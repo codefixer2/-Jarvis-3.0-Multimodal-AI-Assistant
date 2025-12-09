@@ -1,9 +1,8 @@
 import streamlit as st
-from agno.ago import Agent
-from agno.run.agent import RunOutput
+from agno.agent import Agent
+from agno.run.agent import RunOutput    
 from agno.models.google import GeminiModel
 from agno.media import video 
-from time 
 from time import sleep
 from pathlib import Path
 import tempfile
