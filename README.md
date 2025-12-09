@@ -277,8 +277,6 @@ GestureAction👍 Thumbs DownVolume Down✋ Open PalmPlay/Pause Media☝️ Poin
 This document describes the organized file and folder structure of the JARVIS 3.0 project.
 
 ## 📁 Directory Structure
-
-```
 JARVIS3.0/
 ├── src/                          # Source code directory
 │   ├── api/                      # API and Backend modules
