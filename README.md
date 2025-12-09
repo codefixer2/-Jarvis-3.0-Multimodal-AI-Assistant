@@ -264,7 +264,7 @@ You can gradually migrate to the new structure or keep both for compatibility.
 
 🧑‍💻 Author
 **Tushar Kanti Mahato**
-🔹 GitHub: @codefixer2  
+🔹 GitHub: @tusharkantimahato  
 🔹 Project: Jarvis 3.0 – Multimodal Assistant
 🔹 Version: v3.0
 🔹 Python Runtime: py -3.12
