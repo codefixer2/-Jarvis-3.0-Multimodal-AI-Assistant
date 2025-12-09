@@ -124,68 +124,143 @@ GestureAction👍 Thumbs DownVolume Down✋ Open PalmPlay/Pause Media☝️ Poin
 
 🧾 Project Structure
 📁 Jarvis 3.0/
+# JARVIS 3.0 - Project Structure
+
+This document describes the organized file and folder structure of the JARVIS 3.0 project.
+
+## 📁 Directory Structure
+
+```
+JARVIS3.0/
+├── src/                          # Source code directory
+│   ├── api/                      # API and Backend modules
+│   │   ├── __init__.py
+│   │   ├── gemini_client.py      # Gemini AI client wrapper
+│   │   ├── routes.py             # Flask API routes
+│   │   ├── cli.py                # Command-line interface
+│   │   └── new_api.py            # Alternative API implementation
+│   │
+│   ├── desktop/                  # Desktop application (Tkinter)
+│   │   ├── __init__.py
+│   │   ├── app.py                # Main desktop application
+│   │   ├── command_processor.py  # Command processing logic
+│   │   │
+│   │   ├── gui/                  # GUI components
+│   │   │   ├── __init__.py
+│   │   │   └── components.py    # Reusable GUI widgets
+│   │   │
+│   │   ├── voice/                # Voice control module
+│   │   │   ├── __init__.py
+│   │   │   └── voice_controller.py  # Voice recognition & TTS
+│   │   │
+│   │   ├── motion/               # Motion control module
+│   │   │   ├── __init__.py
+│   │   │   └── gesture_recognizer.py  # Hand gesture recognition
+│   │   │
+│   │   └── camera/               # Camera control module
+│   │       ├── __init__.py
+│   │       └── camera_controller.py   # Camera operations
+│   │
+│   └── utils/                    # Utility functions
+│       ├── __init__.py
+│       └── helpers.py            # Helper functions
 │
-├── src/
-│   ├── api/
-│   │   ├── routes/
-│   │   ├── gemini_client.py
-│   │   ├── cli.py
-│   │   └── __init__.py
-│   │
-│   ├── desktop/
-│   │   ├── main_window.py
-│   │   ├── widgets/
-│   │   └── __init__.py
-│   │
-│   ├── gui/
-│   │   ├── components/
-│   │   ├── layouts/
-│   │   └── __init__.py
-│   │
-│   ├── voice/
-│   │   ├── recognizer.py
-│   │   ├── text_to_speech.py
-│   │   └── __init__.py
-│   │
-│   ├── motion/
-│   │   ├── gesture_recognition.py
-│   │   └── __init__.py
-│   │
-│   ├── camera/
-│   │   ├── camera_controller.py
-│   │   └── __init__.py
-│   │
-│   ├── utils/
-│   │   ├── helpers.py
-│   │   ├── logger.py
-│   │   └── __init__.py
-│   │
-│   ├── web/
-│   │   ├── app.py
-│   │   ├── templates/
-│   │   │   └── *.html
-│   │   ├── static/
-│   │   │   ├── css/
-│   │   │   ├── js/
-│   │   │   └── images/
-│   │   └── __init__.py
+├── web/                          # Web application
+│   ├── app.py                    # Flask web app entry point
+│   ├── templates/                # HTML templates
+│   │   └── index.html
+│   └── static/                   # Static files
+│       ├── css/
+│       │   └── style.css
+│       └── js/
+│           └── app.js
 │
-├── config/
-│   ├── settings.py
-│   └── config.yaml
+├── config/                       # Configuration files
+│   ├── __init__.py
+│   └── settings.py              # Application settings
 │
-├── tests/
-│   ├── test_api.py
-│   ├── test_desktop.py
-│   ├── test_web.py
+├── tests/                        # Test files
 │   └── __init__.py
 │
-├── run_desktop.py
-├── run_web.py
-├── requirements.txt
-├── README.md
-├── LICENSE
-└── .gitignore
+├── run_desktop.py                # Run desktop application
+├── run_web.py                    # Run web application
+├── requirements.txt              # Python dependencies
+├── README.md                     # Project documentation
+└── PROJECT_STRUCTURE.md          # This file
+```
+
+## 🚀 Running the Applications
+
+### Desktop Application
+```bash
+python run_desktop.py
+```
+
+### Web Application
+```bash
+python run_web.py
+```
+
+### CLI API Interface
+```bash
+python -m src.api.cli
+```
+
+## 📦 Module Descriptions
+
+### `src/api/`
+Contains all API-related code:
+- **gemini_client.py**: Handles Gemini AI integration
+- **routes.py**: Flask API endpoints
+- **cli.py**: Command-line interface for testing
+
+### `src/desktop/`
+Desktop application modules:
+- **app.py**: Main application class and GUI setup
+- **command_processor.py**: Processes voice and gesture commands
+- **gui/**: Reusable GUI components
+- **voice/**: Voice recognition and text-to-speech
+- **motion/**: Hand gesture recognition using MediaPipe
+- **camera/**: Camera capture and processing
+
+### `src/utils/`
+Shared utility functions used across modules
+
+### `web/`
+Flask web application:
+- **app.py**: Flask app initialization and routes
+- **templates/**: HTML templates
+- **static/**: CSS and JavaScript files
+
+### `config/`
+Configuration management:
+- **settings.py**: Centralized settings loaded from environment variables
+
+## 🔧 Configuration
+
+All configuration is managed through `config/settings.py` and environment variables:
+- `GEMINI_API_KEY`: Your Gemini API key
+- `FLASK_HOST`: Flask server host (default: 0.0.0.0)
+- `FLASK_PORT`: Flask server port (default: 5000)
+
+## 📝 Code Organization Principles
+
+1. **Separation of Concerns**: Each module has a single responsibility
+2. **Modularity**: Code is split into logical, reusable modules
+3. **Configuration Management**: Centralized configuration in `config/`
+4. **Entry Points**: Clear entry points for each application mode
+5. **Reusability**: Shared utilities and components
+
+## 🔄 Migration from Old Structure
+
+The old files (`app.py`, `main.py`, `.api/new_api.py`) are still present but the new structure uses:
+- `web/app.py` instead of `app.py`
+- `src/desktop/app.py` instead of `main.py`
+- `src/api/new_api.py` instead of `.api/new_api.py`
+
+You can gradually migrate to the new structure or keep both for compatibility.
+
+
 
 🧑‍💻 Author
 **Tushar Kanti Mahato**
