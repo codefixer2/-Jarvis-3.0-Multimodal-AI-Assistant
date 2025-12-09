@@ -433,24 +433,6 @@ Best experience on Python 3.12 with MediaPipe installed
 Jarvis 3.0 is an evolving AI assistant — future updates will focus on performance, stability, and feature enhancement.
 If any errors, bugs, or mistakes occur in the current version, they will be corrected and optimized in upcoming releases.
 
-## Planned Enhancements:
-
-🧠 AI Integration: Add NLP & LLM support (ChatGPT / Gemini API) for contextual conversation
-
-🎥 Enhanced Gesture Recognition: Improve motion accuracy and add more gestures
-
-🎙️ Voice Model Upgrade: Faster response and noise reduction
-
-⚙️ Modular Architecture: Split modules for voice, camera, and gesture into separate packages
-
-🌐 Web Connectivity: Enable online information fetching (weather, news, etc.)
-
-🪄 Error Handling: Auto-detect and log exceptions for smoother debugging
-
-💾 Update Tracker: Auto-update system for new versions
-
-🧩 If you modify or upgrade Jarvis 3.0 in the future, please mention the version and date in the changelog section below to keep the project well-documented.
-
 ---
 
 ⭐ If you like this project, please give it a star — it helps support future updates!
